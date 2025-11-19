@@ -2147,3 +2147,49 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Contact Form Messages */
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.php-email-form .loading.d-block {
+  display: block !important;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: var(--accent-color);
+}
+
+.php-email-form .error-message.d-block {
+  display: block !important;
+  background: #df1529;
+  color: #ffffff;
+}
+
+.php-email-form .sent-message.d-block {
+  display: block !important;
+  background: #059652;
+  color: #ffffff;
+}
+
+.php-email-form button[type="submit"] {
+  background: var(--accent-color);
+  color: #fff;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}

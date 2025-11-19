@@ -582,46 +582,56 @@
           <i class="bi bi-envelope flex-shrink-0"></i>
           <div>
             <h3>Email</h3>
-            <p>it.dreamweb@goggle.com</p>
+            <p>it.dreamweb@gmail.com</p>
           </div>
         </div><!-- End Info Item -->
 
       </div>
 
       <div class="col-lg-8">
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-  <!-- Hidden fields for Netlify -->
-  <input type="hidden" name="form-name" value="contact">
-  <p style="display: none;">
-    <label>Nie wypełniaj tego pola: <input name="bot-field" /></label>
+  <form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true" 
+  data-netlify-honeypot="bot-field"    
+  class="php-email-form"
+>action="/success/"  <!-- strona z podziękowaniem – utwórz ją w kroku 3 -->
+  <input type="hidden" name="form-name" value="contact" />
+
+  <!-- honeypot -->
+  <p class="d-none">
+    <label>Nie wypełniaj: <input name="bot-field" /></label>
   </p>
-  
-  <div class="row gy-4">
+    
+    <div class="row gy-4">
 
-    <div class="col-md-6">
-      <input type="text" name="name" class="form-control" placeholder="Twoje imię" required>
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Twoje imię" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" class="form-control" name="email" placeholder="Twój email" required>
+      </div>
+
+      <div class="col-md-12">
+        <input type="text" class="form-control" name="subject" placeholder="Temat" required>
+      </div>
+
+      <div class="col-md-12">
+        <textarea class="form-control" name="message" rows="6" placeholder="Wiadomość" required></textarea>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <div class="loading d-none">Wysyłanie...</div>
+        <div class="error-message d-none"></div>
+        <div class="sent-message d-none">Twoja wiadomość została wysłana. Dziękuję!</div>
+
+        <button type="submit">Wyślij wiadomość</button>
+      </div>
+
     </div>
-
-    <div class="col-md-6">
-      <input type="email" class="form-control" name="email" placeholder="Twój email" required>
-    </div>
-
-    <div class="col-md-12">
-      <input type="text" class="form-control" name="subject" placeholder="Temat" required>
-    </div>
-
-    <div class="col-md-12">
-      <textarea class="form-control" name="message" rows="6" placeholder="Wiadomość" required></textarea>
-    </div>
-
-    <div class="col-md-12 text-center">
-      <button type="submit">Wyślij wiadomość</button>
-    </div>
-
-  </div>
-</form>
-        
-      </div><!-- End Contact Form -->
+  </form>
+</div><!-- End Contact Form -->
 
     </div>
 
@@ -652,7 +662,7 @@
           <h4>Kontakt</h4>
           <p>
             <strong>Telefon:</strong> <span>+48 604 580 412</span><br>
-            <strong>Email:</strong> <span>it.dreamweb@goggle.com</span><br>
+            <strong>Email:</strong> <span>it.dreamweb@gmail.com</span><br>
           </p>
         </div>
       </div>
@@ -707,6 +717,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 
