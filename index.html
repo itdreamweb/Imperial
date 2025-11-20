@@ -587,22 +587,11 @@
         </div><!-- End Info Item -->
 
       </div>
-
+      <!-- FORM VIA GITHUB -->
       <div class="col-lg-8">
-  <form 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  data-netlify-honeypot="bot-field"    
-  class="php-email-form"
->action="/success/"  <!-- strona z podziękowaniem – utwórz ją w kroku 3 -->
-  <input type="hidden" name="form-name" value="contact" />
+  <form action="https://formsubmit.co/it.dreamweb@gmail.com" method="POST" class="php-email-form">
+    <input type="hidden" name="_captcha" value="false">
 
-  <!-- honeypot -->
-  <p class="d-none">
-    <label>Nie wypełniaj: <input name="bot-field" /></label>
-  </p>
-    
     <div class="row gy-4">
 
       <div class="col-md-6">
@@ -610,15 +599,15 @@
       </div>
 
       <div class="col-md-6">
-        <input type="email" class="form-control" name="email" placeholder="Twój email" required>
+        <input type="email" name="email" class="form-control" placeholder="Twój email" required>
       </div>
 
       <div class="col-md-12">
-        <input type="text" class="form-control" name="subject" placeholder="Temat" required>
+        <input type="text" name="subject" class="form-control" placeholder="Temat" required>
       </div>
 
       <div class="col-md-12">
-        <textarea class="form-control" name="message" rows="6" placeholder="Wiadomość" required></textarea>
+        <textarea name="message" class="form-control" rows="6" placeholder="Wiadomość" required></textarea>
       </div>
 
       <div class="col-md-12 text-center">
@@ -631,6 +620,8 @@
 
     </div>
   </form>
+</div>
+
 </div><!-- End Contact Form -->
 
     </div>
