@@ -1,22 +1,4 @@
-/**
-* Template Name: Imperial
-* Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-* Updated: Oct 08 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
-/* W pliku main.css lub dodaj style: */
-.sitename {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
 
 
 :root {
@@ -1581,9 +1563,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 /*--------------------------------------------------------------
 # Blog Posts Section
